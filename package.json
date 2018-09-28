@@ -51,7 +51,7 @@
   },
   "homepage": "https://github.com/jpwilliams/remit#readme",
   "files": [
-    "test",
+    "index.d.ts",
     "lib",
     "utils"
   ],
