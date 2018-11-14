@@ -1,8 +1,11 @@
+import {Connection} from "amqplib";
+
 declare module "remit" {
   interface RemitOptions {
     exchange?: string;
     name?: string;
     url?: string;
+    connection?: Connection;
   }
 
   function remit(options?: RemitOptions): remit.Remit;
