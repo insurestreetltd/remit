@@ -36,7 +36,15 @@ declare namespace remit {
         stop(): Promise<void>;
     }
 
-    export type Emitter = (data: any) => Promise<void>;
+    export interface EmitterOptions {
+        schedule?: Date;
+        delay?: number;
+        persistent?: boolean;
+        priority?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
+        event?: string;
+    }
+
+    export type Emitter = (data: any, options?: EmitterOptions) => Promise<void>;
 
     export interface Remit {
         request(endpointName: string): (args?: any) => Promise<any>;
