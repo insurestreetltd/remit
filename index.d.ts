@@ -5,6 +5,7 @@ interface RemitConstructorOptions {
     name?: string;
     url?: string;
     connection?: Connection;
+    errorHandler?: (Error) => Promise<void>;
 }
 
 declare function remit(options?: RemitConstructorOptions): remit.Remit;
