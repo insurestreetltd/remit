@@ -56,7 +56,7 @@
     "utils"
   ],
   "devDependencies": {
-    "@types/amqplib": "^0.5.9",
+    "@types/amqplib": "^0.10.1",
     "chai": "^4.1.1",
     "coveralls": "^3.0.0",
     "mocha": "^5.0.0",
