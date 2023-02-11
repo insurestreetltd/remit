@@ -35,7 +35,7 @@ function parseUrl (input) {
     // frameMax: '0x20000', // 131,072 (128kb)
     //
     frameMax: '0x1000', // 4,096 (4kb)
-    heartbeat: '15' // Frequent hearbeat
+    heartbeat: '60' // Frequent hearbeat
   }, parsedUrl.query)
 
   // `search` overwrites `query` if defined
